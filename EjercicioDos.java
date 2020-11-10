@@ -1,21 +1,17 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class EjercicioDos {
-    
     public static void main(String[] args){
+        // Objeto Scanner para tomar valores por consola:
         Scanner scan = new Scanner(System.in);
-        int nota = scan.nextInt();
+
+        int a = scan.nextInt(); //Escanea el próximo entero ingresado
+        int b = scan.nextInt(); //Ver qué sucede si ingresamos un String u otro tipo?
+        int c = scan.nextInt();
+
+        System.out.println("El primer número ingresado es: " + a);
+        System.out.println("El segundo número ingresado es: " + b);
+        System.out.println("El tercer número ingresado es: " + c);
         scan.close();
-        if (nota > 92){
-            System.out.println("Excelente");
-        }else if (nota > 84){
-            System.out.println("Sobresaliente");
-        }else if (nota > 74){
-            System.out.println("Distinguido");
-        }else if(nota > 59){
-            System.out.println("Bueno");
-        }else {
-            System.out.println("Desaprobado");
-        }
     }
 }

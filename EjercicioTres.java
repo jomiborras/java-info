@@ -1,34 +1,21 @@
 import java.util.Scanner;
 
 public class EjercicioTres {
-
+    
     public static void main(String[] args){
         Scanner scan = new Scanner(System.in);
-        int dia = scan.nextInt();
+        int nota = scan.nextInt();
         scan.close();
-
-        switch(dia) {
-            case 1:
-                System.out.println("Domingo");
-                break;
-            case 2:
-                System.out.println("Lunes");
-                break;
-            case 3:
-                System.out.println("Martes");
-                break;
-            case 4:
-                System.out.println("Miércoles");
-                break;
-            case 5:
-                System.out.println("Jueves");
-                break;
-            case 6:
-                System.out.println("Viernes");
-                break;
-            case 7:
-                System.out.println("Sábado");
-                break;
+        if (nota > 92){
+            System.out.println("Excelente");
+        }else if (nota > 84){
+            System.out.println("Sobresaliente");
+        }else if (nota > 74){
+            System.out.println("Distinguido");
+        }else if(nota > 59){
+            System.out.println("Bueno");
+        }else {
+            System.out.println("Desaprobado");
         }
     }
 }
